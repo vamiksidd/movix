@@ -1,12 +1,13 @@
 import React from 'react'
 import './style.scss'
-import HeroBanner from './heroBanner/HeroBanner'
+import { Trending, HeroBanner } from '../pages'
 
 
 function Home() {
     return (
         <div className='homePage'>
             <HeroBanner />
+            <Trending />
             <div style={{ height: '500px' }}></div>
         </div>
     )

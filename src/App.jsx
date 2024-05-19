@@ -14,7 +14,7 @@ function App() {
   }, [])
   const fetchApiConfig = () => {
     fetchDataFromApi('/configuration').then((res) => {
-      console.log(res)
+      // console.log(res)
       const url = {
         backdrop: res?.images?.secure_base_url + "original",
         poster: res?.images?.secure_base_url + "original",
@@ -44,7 +44,7 @@ function App() {
         <Route path='/explore/:mediaType' element={<Explore />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   )
 }
