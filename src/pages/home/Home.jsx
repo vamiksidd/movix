@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import { Trending, HeroBanner } from '../pages'
+import { Trending, HeroBanner, Popular, TopRated } from '../pages'
 
 
 function Home() {
@@ -8,7 +8,9 @@ function Home() {
         <div className='homePage'>
             <HeroBanner />
             <Trending />
-            <div style={{ height: '500px' }}></div>
+            <Popular />
+            <TopRated/>
+            {/* <div style={{ height: '500px' }}></div> */}
         </div>
     )
 }

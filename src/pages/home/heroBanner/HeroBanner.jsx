@@ -15,13 +15,17 @@ function HeroBanner() {
   // console.log(data)
 
   useEffect(() => {
-    const bg = url.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
-    setBackground(bg)
+    // const bg =
+    // url.backdrop +
+    // data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
 
-    //{  const bg1 = data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
-    // const bgUrl = `https://image.tmdb.org/t/p/original/${bg1}`}
 
-  })
+    const bg1 = data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
+    const bgUrl = `https://image.tmdb.org/t/p/original/${bg1}`
+
+
+    setBackground(bgUrl)
+  }, [data])
 
   const searchQueryHandler = (e) => {
     if ((e.key === 'Enter' || e.type === 'click') && query.length > 0) {
@@ -35,7 +39,7 @@ function HeroBanner() {
       </div>}
 
       <div className="opacity-layer">
-        
+
       </div>
 
       <ContentWrapper>

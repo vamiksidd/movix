@@ -5,6 +5,8 @@ import Explore from "./explore/Explore";
 import PageNotFound from "./404/PageNotFound";
 import Trending from "./home/trending/Trending";
 import HeroBanner from "./home/heroBanner/HeroBanner";
+import Popular from "./home/popular/Popular";
+import TopRated from "./home/topRated/TopRated";
 export {
     Home,
     Details,
@@ -12,5 +14,7 @@ export {
     Explore,
     PageNotFound,
     Trending,
-    HeroBanner
+    HeroBanner,
+    Popular,
+    TopRated
 }

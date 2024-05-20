@@ -12,12 +12,12 @@
     }
     .arrow {
         font-size: 30px;
-        color: black;
+        color: rgb(253, 249, 249);
         position: absolute;
         top: 44%;
         transform: translateY(-50%);
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.7;
         z-index: 1;
         display: none;
         @include md {
@@ -34,6 +34,7 @@
         right: 30px;
     }
     .loadingSkeleton {
+        // animation-duration: 2s;
         display: flex;
         gap: 10px;
         overflow-y: hidden;
