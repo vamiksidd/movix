@@ -7,6 +7,7 @@ import Trending from "./home/trending/Trending";
 import HeroBanner from "./home/heroBanner/HeroBanner";
 import Popular from "./home/popular/Popular";
 import TopRated from "./home/topRated/TopRated";
+
 export {
     Home,
     Details,
@@ -16,5 +17,6 @@ export {
     Trending,
     HeroBanner,
     Popular,
-    TopRated
+    TopRated,
+
 }
